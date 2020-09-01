@@ -1,7 +1,7 @@
 describe 'Login 3 - Access', :login3 do
     
     before(:each) do
-        visit 'https://training-wheels-protocol.herokuapp.com/access'
+        visit '/access'
     end
 
     it 'login com sucesso', :login do
