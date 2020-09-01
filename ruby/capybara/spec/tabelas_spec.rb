@@ -34,6 +34,7 @@ describe 'Tabelas', :tables do
         prat.find('a', text: 'delete').click
 
         expect(page.driver.browser.switch_to.alert.text).to eql 'Chris Pratt foi selecionado para remoção!'
+        page.driver.browser.switch_to.alert.accept # Código para evitar o erro ao tirar screenshot. O Capybara apresenta erro quando tem alert.
     end
 
     it 'deve selecionar Chris Pratt para edição' do
@@ -41,6 +42,7 @@ describe 'Tabelas', :tables do
         prat.find('a', text: 'edit').click
 
         expect(page.driver.browser.switch_to.alert.text).to eql 'Chris Pratt foi selecionado para edição!'
+        page.driver.browser.switch_to.alert.accept
     end
 
 end
