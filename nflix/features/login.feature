@@ -11,6 +11,7 @@ Funcionalidade: Login
         Então devo ser autenticado
         E devo ver "Tony Stark" na área logada
 
+    @login_hapless
     Cenario: Senha inválida
         Quando eu faço login com "tony@stark.com" e "abc123"
         Então não devo ser autenticado
